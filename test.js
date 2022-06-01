@@ -2,13 +2,13 @@ const express = require('express');
 const app = express();
 const md5 = require('md5');
 
-app.get('/', function (req, res) {
+app.get('/test', function (req, res) {
   res.send('Hello Express');
 });
 
-app.get('/token', function (req, res) {
+app.get('/', function (req, res) {
   var ver = 'staging';
-  var gwstoken = '0066e0be-2a16-4465-8ca9-a6c916cd6a1d';
+  var gwstoken = '00bc9f31-f7be-4d11-8c32-75fbb437d1b1';
   var auth_salt =
     'CFr6KVuyueeoTYRsghUoGlklkQZZPMvK78dcPd3whPVBxrLUYTfgdjpTWoNdv';
   var endpoint = '';
